@@ -32,7 +32,7 @@ uploadArchives {
             repository(url: mavenLocal().url)
             pom.version = '0.2-SNAPSHOT'
             pom.groupId = 'io.vigour.plugin'
-            pom.artifactId = 'plugin'
+            pom.artifactId = 'share'
             // change the artifactId
         }
     }

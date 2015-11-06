@@ -1,7 +1,7 @@
 {
-  "name": "plugin",
+  "name": "vigour-share",
   "version": "1.0.0",
-  "description": "Example of a vigour-style native plugin. Make new plugins by forking this repo.",
+  "description": "Share via ...",
   "main": "lib/index.js",
   "scripts": {
     "start": "gaston",
@@ -9,13 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vigour-io/plugin.git"
+    "url": "https://github.com/vigour-io/share.git"
   },
   "keywords": [
     "vigour",
     "wrapper",
     "native",
-    "plugin"
+    "share",
+    "sharing"
   ],
   "author": "Vigour",
   "contributors": [
@@ -23,25 +24,25 @@
     "Michiel Van Liempt <michiel@vigour.io>",
     "Alexander van de Werff <alex@vigour.io>"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vigour-io/plugin/issues"
+    "url": "https://github.com/vigour-io/share/issues"
   },
-  "homepage": "https://github.com/vigour-io/plugin",
+  "homepage": "https://github.com/vigour-io/share",
   "engines": {
-    "node": ">=0.12"
+    "node": ">=4.1.2"
   },
   "dependencies": {
     "npmlog": "^1.2.1",
     "promise": "^7.0.4",
-    "vigour-native": "git+ssh://git@github.com:vigour-io/vigour-native.git"
+    "vigour-wrapper": "^0.0.5"
   },
   "vigour": {
     "plugin": {
       "android": {
         "skipInstall": true,
-        "className": "io.vigour.plugin",
-        "instantiation": "new Plugin(this, webview)"
+        "className": "io.vigour.share",
+        "instantiation": "new Share(this, webview)"
       }
     }
   },
