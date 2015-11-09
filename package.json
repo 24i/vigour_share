@@ -1,6 +1,6 @@
 {
   "name": "vigour-share",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Share via ...",
   "main": "lib/index.js",
   "scripts": {
